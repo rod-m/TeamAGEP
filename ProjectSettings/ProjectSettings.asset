@@ -4,7 +4,11 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 20
+<<<<<<< HEAD
   productGUID: 4663c199c74d74049ac8fd104b76f9d3
+=======
+  productGUID: 23ff35b9020f05b40946b748d3f2c0c2
+>>>>>>> origin/master
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +17,11 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
+<<<<<<< HEAD
   productName: TeamAGEP3
+=======
+  productName: TeamAGEP
+>>>>>>> origin/master
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -522,18 +530,30 @@ PlayerSettings:
   additionalIl2CppArgs: 
   scriptingRuntimeVersion: 1
   gcIncremental: 0
+<<<<<<< HEAD
+=======
+  assemblyVersionValidation: 1
+>>>>>>> origin/master
   gcWBarrierValidation: 0
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
+<<<<<<< HEAD
   metroPackageName: TeamAGEP3
+=======
+  metroPackageName: TeamAGEP
+>>>>>>> origin/master
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
+<<<<<<< HEAD
   metroApplicationDescription: TeamAGEP3
+=======
+  metroApplicationDescription: TeamAGEP
+>>>>>>> origin/master
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -571,6 +591,10 @@ PlayerSettings:
   XboxOneCapability: []
   XboxOneGameRating: {}
   XboxOneIsContentPackage: 0
+<<<<<<< HEAD
+=======
+  XboxOneEnhancedXboxCompatibilityMode: 0
+>>>>>>> origin/master
   XboxOneEnableGPUVariability: 1
   XboxOneSockets: {}
   XboxOneSplashScreen: {fileID: 0}
