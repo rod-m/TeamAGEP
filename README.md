@@ -4,5 +4,4 @@ Learn version control
 
 Team:
 Rod Martin
-
-Chris Bennett
+Liam Poxton
