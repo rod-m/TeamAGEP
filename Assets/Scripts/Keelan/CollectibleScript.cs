@@ -7,6 +7,11 @@ public class CollectibleScript : MonoBehaviour
 {
     private int score = 0;
 
+    private void Update()
+    {
+        transform.Rotate(transform.up * 1f);
+    }
+
     void Collected()
     {
         Destroy(gameObject);
