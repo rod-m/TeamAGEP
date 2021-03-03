@@ -186,7 +186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSpeed: 5
   playerJumpHeight: 0
-  gravityForce: -5
+  gravityForce: -10
   velocityMultiplier: 1
 --- !u!1 &1275202442
 GameObject:
@@ -292,6 +292,7 @@ GameObject:
   - component: {fileID: 1303448877}
   - component: {fileID: 1303448876}
   - component: {fileID: 1303448875}
+  - component: {fileID: 1303448878}
   m_Layer: 0
   m_Name: PlayerMesh
   m_TagString: Untagged
@@ -374,6 +375,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1303448873}
   m_Mesh: {fileID: 3501382375413321272, guid: a99356d6c39ee6345a3a6716d76bab23, type: 3}
+--- !u!114 &1303448878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1303448873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbceed30ef6ab354bbcd676ea81cda4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerRotationSpeed: 5
 --- !u!1 &1870586175
 GameObject:
   m_ObjectHideFlags: 0
@@ -486,7 +500,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1870586175}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.3, y: 2.48, z: -5.12}
+  m_LocalPosition: {x: -1.3, y: 2.4, z: -6.12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
