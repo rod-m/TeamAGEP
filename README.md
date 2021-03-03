@@ -1,7 +1,8 @@
 # TeamAGEP
-UOS Dev Team
-Learn version control
+# UOS Dev Team
+# Learn version control
 
-Team:
-Rod Martin
-Liam Poxton
+##Team:
+### Rod Martin
+###Liam Poxton
+###Chris Bennett
