@@ -2,9 +2,9 @@
 # UOS Dev Team
 # Learn version control
 
-##Team:
+## Team:
 ### Rod Martin
-###Liam Poxton
-###Chris Bennett
-###Adam Lomax
-##Keelan Smith
+### Liam Poxton
+### Chris Bennett
+### Adam Lomax
+### Keelan Smith
