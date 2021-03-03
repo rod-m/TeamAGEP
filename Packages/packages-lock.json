@@ -1,5 +1,7 @@
 {
   "dependencies": {
+<<<<<<< HEAD
+=======
     "com.unity.cinemachine": {
       "version": "2.6.3",
       "depth": 0,
@@ -7,6 +9,7 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+>>>>>>> origin/master
     "com.unity.collab-proxy": {
       "version": "1.2.16",
       "depth": 0,
@@ -15,7 +18,11 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ext.nunit": {
+<<<<<<< HEAD
+      "version": "1.0.0",
+=======
       "version": "1.0.6",
+>>>>>>> origin/master
       "depth": 1,
       "source": "registry",
       "dependencies": {},
@@ -31,18 +38,30 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.vscode": {
+<<<<<<< HEAD
+      "version": "1.2.2",
+=======
       "version": "1.2.3",
+>>>>>>> origin/master
       "depth": 0,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.test-framework": {
+<<<<<<< HEAD
+      "version": "1.1.18",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.ext.nunit": "1.0.0",
+=======
       "version": "1.1.20",
       "depth": 0,
       "source": "registry",
       "dependencies": {
         "com.unity.ext.nunit": "1.0.6",
+>>>>>>> origin/master
         "com.unity.modules.imgui": "1.0.0",
         "com.unity.modules.jsonserialize": "1.0.0"
       },

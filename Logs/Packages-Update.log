@@ -1,5 +1,9 @@
 
+<<<<<<< HEAD
+=== Wed Mar  3 10:59:09 2021
+=======
 === Wed Mar  3 10:28:12 2021
+>>>>>>> origin/master
 
 Packages were changed.
 Update Mode: resetToDefaultDependencies
@@ -7,7 +11,11 @@ Update Mode: resetToDefaultDependencies
 The following packages were added:
   com.unity.collab-proxy@1.2.16
   com.unity.ide.rider@1.1.4
+<<<<<<< HEAD
+  com.unity.ide.vscode@1.2.2
+=======
   com.unity.ide.vscode@1.2.3
+>>>>>>> origin/master
   com.unity.modules.ai@1.0.0
   com.unity.modules.androidjni@1.0.0
   com.unity.modules.animation@1.0.0
@@ -39,7 +47,11 @@ The following packages were added:
   com.unity.modules.vr@1.0.0
   com.unity.modules.wind@1.0.0
   com.unity.modules.xr@1.0.0
+<<<<<<< HEAD
+  com.unity.test-framework@1.1.18
+=======
   com.unity.test-framework@1.1.20
+>>>>>>> origin/master
   com.unity.textmeshpro@2.1.1
   com.unity.timeline@1.2.17
   com.unity.ugui@1.0.0
