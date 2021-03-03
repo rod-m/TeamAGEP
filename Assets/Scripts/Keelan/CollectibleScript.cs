@@ -1,18 +1,28 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class CollectibleScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private int score = 0;
+
+    private void Update()
     {
-        
+        transform.Rotate(transform.up * 1f);
     }
 
-    // Update is called once per frame
-    void Update()
+    void Collected()
     {
-        
+        score++;
+        Debug.Log($"Score: {score}");
+        Destroy(gameObject);
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            Collected();
+        }
     }
 }
