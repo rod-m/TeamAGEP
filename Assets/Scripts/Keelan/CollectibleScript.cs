@@ -11,6 +11,7 @@ public class CollectibleScript : MonoBehaviour
     {
         Destroy(gameObject);
         score++;
+        Debug.Log($"Score: {score}");
     }
     private void OnTriggerEnter(Collider other)
     {
