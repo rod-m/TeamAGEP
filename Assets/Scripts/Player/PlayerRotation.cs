@@ -3,6 +3,12 @@ using UnityEngine;
 
 namespace Player
 {
+    /**
+     * Adam Explain how this works!
+     * What it should get attached to?
+     * What does it rotate?
+     * 
+     */
     public class PlayerRotation : MonoBehaviour
     {
         [Tooltip("How fast the player rotates.")] [SerializeField] private float playerRotationSpeed = 5.0f;

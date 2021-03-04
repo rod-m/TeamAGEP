@@ -14,15 +14,16 @@ public class CollectibleScript : MonoBehaviour
 
     void Collected()
     {
-        score++;
-        Debug.Log($"Score: {score}");
+        score++; // todo Link this to score board
+        Debug.Log($"Score: {score}");  // house keep!, comment out logs once finished debugging
+        // no one else wants to see your log dumps!
         Destroy(gameObject);
     }
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            Collected();
+            Collected(); // good use of methods
         }
     }
 }
