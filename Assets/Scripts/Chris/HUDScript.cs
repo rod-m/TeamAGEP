@@ -48,7 +48,7 @@ namespace Chris{
             healthText = GameObject.Find("Health Text").GetComponent<Text>();
             if (healthText == null)
             {
-                Debug.LogError("Create Canvas UI Text called Counter Text!");
+                Debug.LogError("Create Canvas UI Text called Health Text!");
             }
         }
         private void LateUpdate(){
