@@ -53,7 +53,7 @@ namespace Chris{
         }
         private void LateUpdate(){
             if(timerMinutes > 0 || timerSeconds > 0){
-                if(timerSeconds > 10){timerText.text = $"{timerMinutes}:{Mathf.RoundToInt(timerSeconds)}";}
+                if(timerSeconds > 9){timerText.text = $"{timerMinutes}:{Mathf.RoundToInt(timerSeconds)}";}
                 else {timerText.text = $"{timerMinutes}:0{Mathf.RoundToInt(timerSeconds)}";}
                 timerSeconds -= 1 * Time.deltaTime;
                 if(timerSeconds <= 0){
