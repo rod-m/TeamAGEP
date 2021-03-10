@@ -835,6 +835,8 @@ MonoBehaviour:
   timerText: {fileID: 1722939734}
   collectText: {fileID: 1683198963}
   healthText: {fileID: 2068569340}
+  timerMinutes: 0
+  timerSeconds: 10
 --- !u!114 &778774595
 MonoBehaviour:
   m_ObjectHideFlags: 0
