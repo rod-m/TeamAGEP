@@ -15,3 +15,5 @@
 
 ## Progress
 Initial game elements have been identified and a team member assigned to various tasks.
+
+## Event System Manual
