@@ -99,7 +99,7 @@ namespace Player
         public void PowerUpEffects(float _boostBy)
         {
           Debug.Log($"!!! powerup {_boostBy}");
-          playerSpeed = _boostBy;
+          playerSpeed *= _boostBy;
         }
     }
 }

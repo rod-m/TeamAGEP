@@ -15,20 +15,14 @@ public class PowerupScript : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playa = other.GetComponent<IPowerUpEffect>();
-            if(playa != null)
-                playa.PowerUpEffects(9f);
-           // ApplyEffects();
+            ApplyEffects();
         }
     }
 
     void ApplyEffects()
     {
         //this speedup tag check can be made better through use of an interface I think, but unsure as how right now
-        if (this.CompareTag("SpeedUp"))
-        {
-            player.speed *= speedMultiplier;
-            //applies
-        }
+        playa.PowerUpEffects(2f);
 
         //doesnt destroy object with script, just removes the mesh so it cant be seen
         GetComponent<Renderer>().enabled = false;
@@ -39,11 +33,7 @@ public class PowerupScript : MonoBehaviour
 
     void ReverseEffects()
     {
-        if (this.CompareTag("SpeedUp"))
-        {
-            //reverse
-            player.speed /= speedMultiplier;
-        }
+        playa.PowerUpEffects(0.5f);
         
         //then destroy
         Destroy(gameObject);
