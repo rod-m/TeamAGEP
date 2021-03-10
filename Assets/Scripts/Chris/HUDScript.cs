@@ -57,7 +57,7 @@ namespace Chris{
                 timerSeconds -= 1 * Time.deltaTime;
                 if(timerSeconds <= 0){
                     timerMinutes -= 1;
-                    timerMinutes = 59;
+                    timerSeconds = 59;
                 }
             }
         }
