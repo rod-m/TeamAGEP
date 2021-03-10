@@ -11,6 +11,7 @@ public class PowerupScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        //check for player
         if (other.CompareTag("Player"))
         {
             ApplyEffects();
@@ -19,13 +20,17 @@ public class PowerupScript : MonoBehaviour
 
     void ApplyEffects()
     {
+        //this speedup tag check can be made better through use of an interface I think, but unsure as how right now
         if (this.CompareTag("SpeedUp"))
         {
             player.speed *= speedMultiplier;
+            //applies
         }
 
+        //doesnt destroy object with script, just removes the mesh so it cant be seen
         GetComponent<Renderer>().enabled = false;
 
+        //reverse after short duration
         Invoke("ReverseEffects", 5f);
     }
 
@@ -33,10 +38,11 @@ public class PowerupScript : MonoBehaviour
     {
         if (this.CompareTag("SpeedUp"))
         {
+            //reverse
             player.speed /= speedMultiplier;
         }
         
+        //then destroy
         Destroy(gameObject);
     }
-    
 }
