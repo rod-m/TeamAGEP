@@ -9,8 +9,8 @@ namespace Chris{
         [SerializeField] private Text timerText;
         [SerializeField] private Text collectText;
         [SerializeField] private Text healthText;
-        private int timerMinutes;
-        private int timerSeconds;
+        [SerializeField] private int timerMinutes;
+        [SerializeField] private float timerSeconds;
         private int collected;
 
         public int Collected{
@@ -32,8 +32,11 @@ namespace Chris{
             }
         }
         
-        public override void Awake()
-        {
+        private void OnValidate(){
+            timerSeconds = Mathf.Clamp(timerSeconds,0, 59);
+        }
+        
+        public override void Awake(){
             base.Awake();
             //Checks that counter exists on UI
             collectText = GameObject.Find("Counter Text").GetComponent<Text>();
@@ -49,7 +52,14 @@ namespace Chris{
             }
         }
         private void LateUpdate(){
-            timerText.text = $"{timerMinutes}:{timerSeconds}";
+            if(timerMinutes > 0 || timerSeconds > 0){
+                timerText.text = $"{timerMinutes}:{Mathf.RoundToInt(timerSeconds)}";
+                timerSeconds -= 1 * Time.deltaTime;
+                if(timerSeconds <= 0){
+                    timerMinutes -= 1;
+                    timerMinutes = 59;
+                }
+            }
         }
     }
 }
