@@ -6,7 +6,7 @@ using UnityEngine;
 public class PowerupScript : MonoBehaviour
 {
     [SerializeField]private DevPlayerTest player;
-
+    private IPowerUpEffect playa;
     private float speedMultiplier = 2f;
 
     private void OnTriggerEnter(Collider other)
@@ -14,7 +14,10 @@ public class PowerupScript : MonoBehaviour
         //check for player
         if (other.CompareTag("Player"))
         {
-            ApplyEffects();
+            playa = other.GetComponent<IPowerUpEffect>();
+            if(playa != null)
+                playa.PowerUpEffects(9f);
+           // ApplyEffects();
         }
     }
 
