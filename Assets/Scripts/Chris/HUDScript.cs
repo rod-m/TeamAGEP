@@ -6,19 +6,19 @@ namespace Chris{
     public class HUDScript : GenericSingleton<HUDScript>
     {
         
-        [SerializeField] private Text timerText;
-        [SerializeField] private Text collectText;
-        [SerializeField] private Text healthText;
-        [SerializeField] private int timerMinutes;
-        [SerializeField] private float timerSeconds;
-        private int collected;
+        [SerializeField, Header("UI Element showing time remaining")] private Text timerText;
+        [SerializeField, Header("UI Element showing collectibles collected")] private Text collectText;
+        [SerializeField, Header("UI Element showing player's health")] private Text healthText;
+        [SerializeField, Header("How many minutes timer should count down from")] private int timerMinutes;
+        [SerializeField, Header("How many seconds timer should count down from, not including minutes")] private float timerSeconds;
+        private int _collected;
 
         public int Collected{
-            get => collected;
+            get => _collected;
             set{
                 //Debug.Log("Has been collected");
-                collected = value;
-                collectText.text = $"Collected:{collected}";
+                _collected = value;
+                collectText.text = $"Collected:{_collected}";
             }
         }
 
