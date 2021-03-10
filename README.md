@@ -12,3 +12,6 @@
 ### Jake Levy
 ### James Crofton
 ### Jake Levy
+
+## Progress
+Initial game elements have been identified and a team member assigned to various tasks.
