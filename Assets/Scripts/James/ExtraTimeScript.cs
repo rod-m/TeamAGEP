@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 /*
@@ -6,6 +7,9 @@ using UnityEngine;
  */
 public class ExtraTimeScript : MonoBehaviour
 {
+    public object Collider;
+    public object Player;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +18,11 @@ public class ExtraTimeScript : MonoBehaviour
 
     // Update is called once per frame
     void Update()
+    {
+        
+    }
+
+    private void OnCollisionEnter(Collision Player)
     {
         
     }
