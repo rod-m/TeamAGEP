@@ -4,7 +4,7 @@ using UnityEngine;
 namespace Player
 {
     [RequireComponent(typeof(CharacterController))]
-    public class PlayerController : MonoBehaviour
+    public class PlayerController : MonoBehaviour, IPowerUpEffect
     {
         /*
  * 
@@ -96,5 +96,10 @@ namespace Player
                     position.z + Input.GetAxis("Vertical")), 0.5f);
         }
 #endif
+        public void PowerUpEffects(float _boostBy)
+        {
+          Debug.Log($"!!! powerup {_boostBy}");
+          playerSpeed *= _boostBy;
+        }
     }
 }

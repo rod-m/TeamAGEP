@@ -48,18 +48,18 @@ namespace Chris{
             healthText = GameObject.Find("Health Text").GetComponent<Text>();
             if (healthText == null)
             {
-                Debug.LogError("Create Canvas UI Text called Counter Text!");
+                Debug.LogError("Create Canvas UI Text called Health Text!");
             }
         }
         private void LateUpdate(){
             if(timerMinutes > 0 || timerSeconds > 0){
-                if(timerSeconds > 9){timerText.text = $"{timerMinutes}:{Mathf.RoundToInt(timerSeconds)}";}
-                else {timerText.text = $"{timerMinutes}:0{Mathf.RoundToInt(timerSeconds)}";}
-                timerSeconds -= 1 * Time.deltaTime;
                 if(timerSeconds <= 0){
                     timerMinutes -= 1;
                     timerSeconds = 59;
                 }
+                timerSeconds -= 1 * Time.deltaTime;
+                if(timerSeconds > 9){timerText.text = $"{timerMinutes}:{Mathf.RoundToInt(timerSeconds)}";}
+                else {timerText.text = $"{timerMinutes}:0{Mathf.RoundToInt(timerSeconds)}";}
             }
         }
     }
