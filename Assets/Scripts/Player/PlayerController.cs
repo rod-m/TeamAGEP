@@ -96,10 +96,17 @@ namespace Player
                     position.z + Input.GetAxis("Vertical")), 0.5f);
         }
 #endif
-        public void PowerUpEffects(float _boostBy)
+        public void PowerUpEffects(float _boostBy, string type)
         {
-          Debug.Log($"!!! powerup {_boostBy}");
-          playerSpeed *= _boostBy;
+            if (type == "SpeedUp")
+            {
+                Debug.Log("SpeedUp Collected");
+                playerSpeed *= _boostBy;
+            } else if (type == "JumpUp")
+            {
+                Debug.Log("JumpUp Collected");
+                playerJumpHeight *= _boostBy;
+            }
         }
     }
 }
