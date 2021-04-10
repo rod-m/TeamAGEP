@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 4925279638712608387}
   - component: {fileID: 4925279638712608384}
   - component: {fileID: 4925279638712608385}
-  - component: {fileID: 4925279638712608414}
   m_Layer: 0
   m_Name: Teleport
   m_TagString: Untagged
@@ -94,17 +93,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1.5, z: 0}
---- !u!114 &4925279638712608414
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4925279638712608415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2ef9dd3de5c0c9469f630324befecc3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player: {fileID: 0}
-  Desination: {fileID: 0}
