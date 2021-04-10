@@ -52,6 +52,11 @@ namespace Chris{
             }
         }
         private void LateUpdate(){
+            // I would use seconds to countdown, then simply convert seconds to minutes:seconds
+            /*
+             * to get minute just divide by 60
+             * to get seconds use modulus, timerSeconds = totalSeconds % 60
+             */
             if(timerMinutes > 0 || timerSeconds > 0){
                 if(timerSeconds <= 0){
                     timerMinutes -= 1;
