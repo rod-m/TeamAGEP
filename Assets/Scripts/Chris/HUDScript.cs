@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 namespace Chris{
-    public class HUDScript : GenericSingleton<HUDScript>
+    public class HUDScript : GenericSingleton<HUDScript>, IPickUpTime
     {
         
         [SerializeField, Header("UI Element showing time remaining")] private Text timerText;
@@ -67,6 +67,11 @@ namespace Chris{
                 if(timerSeconds > 9){timerText.text = $"{timerMinutes}:{Mathf.RoundToInt(timerSeconds)}";}
                 else {timerText.text = $"{timerMinutes}:0{Mathf.RoundToInt(timerSeconds)}";}
             }
+        }
+
+        public void PickUpTime()
+        {
+            throw new NotImplementedException();
         }
     }
 }
