@@ -1,20 +1,18 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 /*
- * James please write up what you want this class to do
+ * Item that adds extra time on collected by player
  */
 public class ExtraTimeScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    void OnTriggerEnter(Collider collision)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (collision.gameObject.tag == "Player")
+        {
+            print("Extra Time Picked Up");
+            Destroy(gameObject);
+        }
     }
 }
