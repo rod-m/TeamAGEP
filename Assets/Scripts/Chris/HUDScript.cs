@@ -63,6 +63,7 @@ namespace Chris{
                     timerSeconds = 59;
                 }
                 timerSeconds -= 1 * Time.deltaTime;
+                // Any reason why you have greater than 9 seconds here?
                 if(timerSeconds > 9){timerText.text = $"{timerMinutes}:{Mathf.RoundToInt(timerSeconds)}";}
                 else {timerText.text = $"{timerMinutes}:0{Mathf.RoundToInt(timerSeconds)}";}
             }
