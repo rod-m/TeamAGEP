@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 namespace Chris{
-    public class HUDScript : GenericSingleton<HUDScript>
+    public class HUDScript : GenericSingleton<HUDScript>, IPickUpTime
     {
         
         [SerializeField, Header("UI Element showing time remaining")] private Text timerText;
@@ -52,15 +52,26 @@ namespace Chris{
             }
         }
         private void LateUpdate(){
+            // I would use seconds to countdown, then simply convert seconds to minutes:seconds
+            /*
+             * to get minute just divide by 60
+             * to get seconds use modulus, timerSeconds = totalSeconds % 60
+             */
             if(timerMinutes > 0 || timerSeconds > 0){
                 if(timerSeconds <= 0){
                     timerMinutes -= 1;
                     timerSeconds = 59;
                 }
                 timerSeconds -= 1 * Time.deltaTime;
+                // Any reason why you have greater than 9 seconds here?
                 if(timerSeconds > 9){timerText.text = $"{timerMinutes}:{Mathf.RoundToInt(timerSeconds)}";}
                 else {timerText.text = $"{timerMinutes}:0{Mathf.RoundToInt(timerSeconds)}";}
             }
+        }
+
+        public void PickUpTime()
+        {
+            throw new NotImplementedException();
         }
     }
 }
