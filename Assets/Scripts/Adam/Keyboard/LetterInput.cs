@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 namespace Adam.Keyboard
@@ -24,8 +22,9 @@ namespace Adam.Keyboard
         private int _charMaximum = 27;
         private int _charMinimum = -1;
         
-        private readonly char[] _chars = new char[26];
+        //private readonly char[] _chars = new char[26];
 
+        /*
         private void OnEnable()
         {
             for (var i = 0; i < _chars.Length; i++)
@@ -34,6 +33,7 @@ namespace Adam.Keyboard
                 Debug.Log((char)(c+i));
             }
         }
+        */
 
         private void Update()
         {
@@ -48,7 +48,7 @@ namespace Adam.Keyboard
 
             var newIndex = _index % 26;
  
-            Debug.Log(_index);
+            //Debug.Log(_index);
             letter.text = $"{(char)(newIndex+65)}";
 
             succeedingLetter.text = $"{(char)(newIndex+66)}";
